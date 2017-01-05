@@ -47,6 +47,13 @@ class LambdaPublisher
                 function_name: LAMBDA_NAME,
                 zip_file: loadZippedSourceCode
             })
+
+            result = @@client.update_function_configuration({
+                function_name: LAMBDA_NAME,
+                handler: "index.handler",
+                role: AWS_IAM_ROLE,
+                runtime: "nodejs4.3"
+            })
         end
 
         def createFunction
