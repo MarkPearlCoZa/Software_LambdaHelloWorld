@@ -3,7 +3,7 @@
 require 'io/console'
 require 'aws-sdk'
 
-AWS_ROLE_NAME = 'blah'
+AWS_ROLE_NAME = 'LambdaFunctions'
 AWS_ACCOUNT_NUM = '304434685916'
 AWS_REGION = 'ap-southeast-2'
 AWS_IAM_ROLE = 'arn:aws:iam::' + AWS_ACCOUNT_NUM + ':role/service-role/' + AWS_ROLE_NAME;
