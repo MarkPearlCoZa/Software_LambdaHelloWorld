@@ -120,9 +120,11 @@ class LambdaPublisher
         end
 end
 
+
 puts AWS_IAM_ROLE
 iam = IAMCreator.new
 puts iam.ensureRoleExists
+
 publisher = LambdaPublisher.new
 publisher.ensureLatestCode
 

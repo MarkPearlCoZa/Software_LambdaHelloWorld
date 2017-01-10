@@ -1,4 +1,6 @@
 index.zip
+*.py
+        
 
 # Logs
 logs
